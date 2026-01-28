@@ -25,7 +25,7 @@ Open a [Discussion](https://github.com/chaiwithjai/jc-animals/discussions) first
 3. PRs without prior discussion may be closed
 
 ### I have a question
-Join our [Facebook Community](https://www.facebook.com/groups/animalsofjerseycityheights) or open a Discussion.
+Join our [Facebook Community](https://www.facebook.com/groups/1391458226058501) or open a Discussion.
 
 ---
 
@@ -100,7 +100,7 @@ First Saturday of each month. Join to:
 - Suggest features in person
 - Get help with PRs
 
-Details in the [Facebook group](https://www.facebook.com/groups/animalsofjerseycityheights).
+Details in the [Facebook group](https://www.facebook.com/groups/1391458226058501).
 
 ---
 

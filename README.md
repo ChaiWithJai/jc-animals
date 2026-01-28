@@ -2,7 +2,7 @@
 
 A community wildlife directory for Jersey City Heights, NJ. Discover the 25+ species living on the Palisades cliffs and in your neighborhood.
 
-**[Live Site](https://jc-animals.vercel.app)** • **[Facebook Community](https://www.facebook.com/groups/animalsofjerseycityheights)**
+**[Live Site](https://jc-animals.vercel.app)** • **[Facebook Community](https://www.facebook.com/groups/1391458226058501)**
 
 ## Quick Start
 
@@ -38,7 +38,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to:
 
 ## AI Transparency
 
-Species information was generated using Claude Opus 4.5 and reviewed by community contributors. We're actively collecting feedback on accuracy. [Report issues here](https://forms.gle/YOUR_FORM_ID).
+Species information was generated using Claude Opus 4.5 and reviewed by community contributors. We're actively collecting feedback on accuracy. [Report issues here](https://docs.google.com/forms/d/e/1FAIpQLSf5gTPvC4ydze_sxc469y83CB0yFJm7m81ja0BWVSdPUW4B7g/viewform).
 
 ## License
 
