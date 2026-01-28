@@ -1,0 +1,88 @@
+{
+    "situations": [
+        {
+            "text": "Stray dog",
+            "agency": "JC Animal Control",
+            "phone": "201-547-4888"
+        },
+        {
+            "text": "Injured hawk",
+            "agency": "NJDEP Fish & Wildlife",
+            "phone": "609-292-2965",
+            "note": "They'll refer you to a licensed rehabilitator"
+        },
+        {
+            "text": "Bat in house",
+            "agency": "JC Animal Control",
+            "phone": "201-547-4888",
+            "note": "Rabies concern - don't touch!"
+        },
+        {
+            "text": "Spotted lanternfly",
+            "agency": "NJ Dept of Agriculture",
+            "phone": "609-406-6939",
+            "note": "Report large infestations"
+        },
+        {
+            "text": "Deer in yard",
+            "agency": "NJDEP Fish & Wildlife",
+            "phone": "609-292-2965",
+            "note": "Information only - they won't remove deer"
+        },
+        {
+            "text": "Rabies exposure",
+            "agency": "Hudson Regional Health",
+            "phone": "201-223-1133",
+            "note": "URGENT - seek medical attention"
+        },
+        {
+            "text": "Animal bite",
+            "agency": "JC Animal Control",
+            "phone": "201-547-4888",
+            "note": "Report required by law"
+        },
+        {
+            "text": "Peregrine falcon sighting",
+            "agency": "NJDEP ENSP",
+            "phone": "609-292-2965",
+            "note": "Help track endangered species!"
+        }
+    ],
+    "agencies": [
+        {
+            "level": "Municipal",
+            "name": "Jersey City",
+            "agency": "Animal Care and Control",
+            "phone": "201-547-4888",
+            "website": "jerseycitynj.gov"
+        },
+        {
+            "level": "County",
+            "name": "Hudson County",
+            "agency": "Regional Health Commission",
+            "phone": "201-223-1133",
+            "website": "hudsonregional.gov"
+        },
+        {
+            "level": "State",
+            "name": "New Jersey",
+            "agency": "NJDEP Fish & Wildlife",
+            "phone": "609-292-2965",
+            "website": "dep.nj.gov/njfw"
+        },
+        {
+            "level": "Regional",
+            "name": "Palisades",
+            "agency": "Interstate Park Commission",
+            "phone": "",
+            "website": "njpalisades.org"
+        },
+        {
+            "level": "Federal",
+            "name": "U.S. Fish & Wildlife",
+            "agency": "NJ Field Office",
+            "phone": "609-646-9310",
+            "website": "fws.gov"
+        }
+    ]
+}

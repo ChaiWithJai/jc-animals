@@ -1,0 +1,38 @@
+{
+    "name": "jc-animals",
+    "version": "1.0.0",
+    "description": "Wildlife directory for Jersey City Heights",
+    "main": "index.html",
+    "scripts": {
+        "start": "npx serve .",
+        "build": "npm run minify:css && npm run minify:js",
+        "minify:css": "npx cssnano styles.css dist/styles.min.css",
+        "minify:js": "npx terser app.js -o dist/app.min.js -c -m",
+        "lint": "npx html-validate index.html",
+        "lighthouse": "npx lighthouse http://localhost:3000 --output=json --output-path=./lighthouse-report.json",
+        "test:links": "npx broken-link-checker http://localhost:3000 --ordered --recursive"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chaiwithjai/jc-animals.git"
+    },
+    "keywords": [
+        "wildlife",
+        "jersey-city",
+        "palisades",
+        "animals",
+        "community"
+    ],
+    "author": "Jay Bhagat",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/chaiwithjai/jc-animals/issues"
+    },
+    "homepage": "https://github.com/chaiwithjai/jc-animals#readme",
+    "devDependencies": {
+        "cssnano": "^6.0.0",
+        "cssnano-cli": "^1.0.0",
+        "terser": "^5.24.0",
+        "serve": "^14.2.0"
+    }
+}

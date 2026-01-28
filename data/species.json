@@ -1,0 +1,547 @@
+{
+    "categories": [
+        {
+            "id": "CAT-CLIFF",
+            "name": "Cliff Dwellers",
+            "description": "Species uniquely adapted to the Palisades rock formations",
+            "icon": "mountain",
+            "color": "#8B4513",
+            "image": "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "species": [
+                {
+                    "id": "SP-001",
+                    "common_name": "Peregrine Falcon",
+                    "scientific_name": "Falco peregrinus",
+                    "status": "endangered_breeding",
+                    "description": "World's fastest animal, diving at speeds over 200 mph. Nests on Palisades cliffs and tall buildings.",
+                    "fun_fact": "Peregrine falcons were nearly extinct in NJ but have made a remarkable comeback thanks to conservation efforts.",
+                    "habitat": [
+                        "cliffs",
+                        "tall_buildings",
+                        "bridges"
+                    ],
+                    "diet": [
+                        "pigeons",
+                        "songbirds",
+                        "bats"
+                    ],
+                    "activity": "diurnal",
+                    "image": "https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-002",
+                    "common_name": "Red-tailed Hawk",
+                    "scientific_name": "Buteo jamaicensis",
+                    "status": "stable",
+                    "description": "Large raptor with distinctive red tail, often seen soaring above The Heights.",
+                    "fun_fact": "Their screech is so iconic it's often dubbed over bald eagle sounds in movies.",
+                    "habitat": [
+                        "cliffs",
+                        "trees",
+                        "urban_areas"
+                    ],
+                    "diet": [
+                        "rodents",
+                        "rabbits",
+                        "small_birds"
+                    ],
+                    "activity": "diurnal",
+                    "image": "https://images.pexels.com/photos/2662434/pexels-photo-2662434.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-003",
+                    "common_name": "Turkey Vulture",
+                    "scientific_name": "Cathartes aura",
+                    "status": "stable",
+                    "description": "Large dark bird that soars with wings in a V-shape. Essential for cleaning up roadkill.",
+                    "fun_fact": "They have an incredible sense of smell and can detect carrion from over a mile away.",
+                    "habitat": [
+                        "cliffs",
+                        "open_areas"
+                    ],
+                    "diet": [
+                        "carrion"
+                    ],
+                    "activity": "diurnal",
+                    "image": "https://images.pexels.com/photos/10612275/pexels-photo-10612275.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-005",
+                    "common_name": "Five-lined Skink",
+                    "scientific_name": "Plestiodon fasciatus",
+                    "status": "special_concern",
+                    "description": "New Jersey's only native lizard! Found in rocky crevices of the Palisades.",
+                    "fun_fact": "Juveniles have bright blue tails that fade as they mature. If grabbed by a predator, they can detach their tail!",
+                    "habitat": [
+                        "rocky_outcrops",
+                        "woodland_edges"
+                    ],
+                    "diet": [
+                        "insects",
+                        "spiders"
+                    ],
+                    "activity": "diurnal",
+                    "image": "https://images.pexels.com/photos/567540/pexels-photo-567540.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-004",
+                    "common_name": "Black Vulture",
+                    "scientific_name": "Coragyps atratus",
+                    "status": "expanding_range",
+                    "description": "Stockier than turkey vultures with shorter tails and gray heads. Range expanding northward.",
+                    "fun_fact": "Unlike turkey vultures, they hunt by sight rather than smell and are more social.",
+                    "habitat": [
+                        "cliffs",
+                        "urban_rooftops"
+                    ],
+                    "diet": [
+                        "carrion"
+                    ],
+                    "activity": "diurnal",
+                    "image": "https://images.pexels.com/photos/10612275/pexels-photo-10612275.jpeg?auto=compress&cs=tinysrgb&w=800"
+                }
+            ]
+        },
+        {
+            "id": "CAT-MAMMAL",
+            "name": "Urban Mammals",
+            "description": "Mammals adapted to life in The Heights",
+            "icon": "paw",
+            "color": "#654321",
+            "image": "https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "species": [
+                {
+                    "id": "SP-010",
+                    "common_name": "Eastern Gray Squirrel",
+                    "scientific_name": "Sciurus carolinensis",
+                    "status": "abundant",
+                    "description": "The most commonly seen mammal in The Heights, active year-round.",
+                    "fun_fact": "They plant thousands of trees annually by forgetting where they buried their acorns.",
+                    "habitat": [
+                        "parks",
+                        "residential_trees"
+                    ],
+                    "diet": [
+                        "nuts",
+                        "seeds",
+                        "bird_eggs"
+                    ],
+                    "activity": "diurnal",
+                    "image": "https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-011",
+                    "common_name": "Raccoon",
+                    "scientific_name": "Procyon lotor",
+                    "status": "abundant",
+                    "description": "Highly intelligent nocturnal mammal known for 'washing' food and raiding trash.",
+                    "fun_fact": "Their 'hands' have more nerve endings than most mammals, giving them incredible dexterity.",
+                    "habitat": [
+                        "storm_drains",
+                        "attics",
+                        "trees"
+                    ],
+                    "diet": [
+                        "omnivore",
+                        "trash",
+                        "pet_food"
+                    ],
+                    "activity": "nocturnal",
+                    "image": "https://images.pexels.com/photos/3714428/pexels-photo-3714428.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-012",
+                    "common_name": "Virginia Opossum",
+                    "scientific_name": "Didelphis virginiana",
+                    "status": "stable",
+                    "description": "North America's only marsupial! Beneficial for eating ticks and pests.",
+                    "fun_fact": "They're nearly immune to rabies due to their low body temperature, and one opossum can eat 5,000 ticks per season!",
+                    "habitat": [
+                        "backyards",
+                        "under_porches",
+                        "trees"
+                    ],
+                    "diet": [
+                        "ticks",
+                        "insects",
+                        "carrion",
+                        "fruit"
+                    ],
+                    "activity": "nocturnal",
+                    "image": "https://images.pexels.com/photos/16045935/pexels-photo-16045935.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-015",
+                    "common_name": "White-tailed Deer",
+                    "scientific_name": "Odocoileus virginianus",
+                    "status": "overabundant",
+                    "description": "Increasingly common in urban areas, moving along greenways and rail corridors.",
+                    "fun_fact": "Can jump 8 feet high and 30 feet in a single bound.",
+                    "habitat": [
+                        "greenways",
+                        "parks",
+                        "rail_corridors"
+                    ],
+                    "diet": [
+                        "browse",
+                        "gardens"
+                    ],
+                    "activity": "crepuscular",
+                    "image": "https://images.pexels.com/photos/62640/pexels-photo-62640.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-016",
+                    "common_name": "Red Fox",
+                    "scientific_name": "Vulpes vulpes",
+                    "status": "stable",
+                    "description": "Adaptable canid increasingly seen in urban areas, especially near parks.",
+                    "fun_fact": "They use the Earth's magnetic field to hunt, pouncing in a northeasterly direction for maximum success.",
+                    "habitat": [
+                        "parks",
+                        "rail_corridors",
+                        "cemetery"
+                    ],
+                    "diet": [
+                        "rodents",
+                        "rabbits",
+                        "birds",
+                        "fruit"
+                    ],
+                    "activity": "crepuscular",
+                    "image": "https://images.pexels.com/photos/247399/pexels-photo-247399.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-017",
+                    "common_name": "Eastern Coyote",
+                    "scientific_name": "Canis latrans",
+                    "status": "expanding",
+                    "description": "Occasionally spotted moving along rail lines and the Palisades ridge.",
+                    "fun_fact": "Eastern coyotes are larger than western ones because they have some wolf DNA from interbreeding.",
+                    "habitat": [
+                        "rail_corridors",
+                        "greenways"
+                    ],
+                    "diet": [
+                        "rodents",
+                        "rabbits",
+                        "deer_fawns"
+                    ],
+                    "activity": "nocturnal",
+                    "image": "https://images.pexels.com/photos/5149696/pexels-photo-5149696.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-013",
+                    "common_name": "Striped Skunk",
+                    "scientific_name": "Mephitis mephitis",
+                    "status": "stable",
+                    "description": "Nocturnal mammal famous for its defensive spray. Actually quite docile if not threatened.",
+                    "fun_fact": "They stamp their feet as a warning before spraying - if you see this, back away slowly!",
+                    "habitat": [
+                        "under_porches",
+                        "burrows",
+                        "gardens"
+                    ],
+                    "diet": [
+                        "insects",
+                        "grubs",
+                        "small_rodents"
+                    ],
+                    "activity": "nocturnal",
+                    "image": "https://images.pexels.com/photos/5486970/pexels-photo-5486970.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-014",
+                    "common_name": "Groundhog",
+                    "scientific_name": "Marmota monax",
+                    "status": "stable",
+                    "description": "Large rodent that creates extensive burrow systems. True hibernator also called woodchuck.",
+                    "fun_fact": "Their burrows can be 45 feet long and provide homes for other animals like rabbits and foxes.",
+                    "habitat": [
+                        "parks",
+                        "cemeteries",
+                        "open_fields"
+                    ],
+                    "diet": [
+                        "vegetation",
+                        "clover",
+                        "garden_plants"
+                    ],
+                    "activity": "diurnal",
+                    "image": "https://images.pexels.com/photos/3689532/pexels-photo-3689532.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-018",
+                    "common_name": "Big Brown Bat",
+                    "scientific_name": "Eptesicus fuscus",
+                    "status": "stable",
+                    "description": "Common bat species that roosts in attics and eats thousands of insects nightly.",
+                    "fun_fact": "A single bat can eat up to 1,000 mosquitoes in one hour!",
+                    "habitat": [
+                        "attics",
+                        "barns",
+                        "tree_cavities"
+                    ],
+                    "diet": [
+                        "moths",
+                        "beetles",
+                        "mosquitoes"
+                    ],
+                    "activity": "nocturnal",
+                    "image": "https://images.pexels.com/photos/3261662/pexels-photo-3261662.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-019",
+                    "common_name": "Little Brown Bat",
+                    "scientific_name": "Myotis lucifugus",
+                    "status": "endangered",
+                    "description": "Once common, now ENDANGERED due to White-nose Syndrome fungal disease.",
+                    "fun_fact": "Populations have declined by over 90% due to White-nose Syndrome. Report any bat sightings!",
+                    "habitat": [
+                        "attics",
+                        "caves",
+                        "tree_bark"
+                    ],
+                    "diet": [
+                        "insects",
+                        "mosquitoes"
+                    ],
+                    "activity": "nocturnal",
+                    "image": "https://images.pexels.com/photos/3261662/pexels-photo-3261662.jpeg?auto=compress&cs=tinysrgb&w=800"
+                }
+            ]
+        },
+        {
+            "id": "CAT-BIRD",
+            "name": "Urban Birds",
+            "description": "Resident and migratory birds of The Heights",
+            "icon": "bird",
+            "color": "#4169E1",
+            "image": "https://images.pexels.com/photos/45851/bird-blue-cristata-cyanocitta-45851.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "species": [
+                {
+                    "id": "SP-023",
+                    "common_name": "Northern Cardinal",
+                    "scientific_name": "Cardinalis cardinalis",
+                    "status": "stable",
+                    "description": "Bright red male is unmistakable. Year-round resident.",
+                    "fun_fact": "One of the few songbirds where both males and females sing.",
+                    "habitat": [
+                        "shrubs",
+                        "gardens",
+                        "woodland_edges"
+                    ],
+                    "diet": [
+                        "seeds",
+                        "fruit",
+                        "insects"
+                    ],
+                    "activity": "diurnal",
+                    "image": "https://images.pexels.com/photos/45851/bird-blue-cristata-cyanocitta-45851.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-024",
+                    "common_name": "Blue Jay",
+                    "scientific_name": "Cyanocitta cristata",
+                    "status": "stable",
+                    "description": "Intelligent corvid known for loud calls and acorn caching.",
+                    "fun_fact": "They can mimic hawk calls to scare other birds away from feeders.",
+                    "habitat": [
+                        "trees",
+                        "parks",
+                        "residential_areas"
+                    ],
+                    "diet": [
+                        "acorns",
+                        "seeds",
+                        "insects"
+                    ],
+                    "activity": "diurnal",
+                    "image": "https://images.pexels.com/photos/1405172/pexels-photo-1405172.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-026",
+                    "common_name": "Cooper's Hawk",
+                    "scientific_name": "Accipiter cooperii",
+                    "status": "stable",
+                    "description": "Agile hawk that hunts songbirds in backyards and parks.",
+                    "fun_fact": "Has adapted so well to cities that urban populations may be denser than forest ones.",
+                    "habitat": [
+                        "trees",
+                        "urban_parks",
+                        "residential_areas"
+                    ],
+                    "diet": [
+                        "songbirds",
+                        "pigeons",
+                        "small_mammals"
+                    ],
+                    "activity": "diurnal",
+                    "image": "https://images.pexels.com/photos/2662434/pexels-photo-2662434.jpeg?auto=compress&cs=tinysrgb&w=800"
+                }
+            ]
+        },
+        {
+            "id": "CAT-REPTILE",
+            "name": "Reptiles & Amphibians",
+            "description": "Cold-blooded residents of The Heights",
+            "icon": "snake",
+            "color": "#228B22",
+            "image": "https://images.pexels.com/photos/567540/pexels-photo-567540.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "species": [
+                {
+                    "id": "SP-030",
+                    "common_name": "Eastern Garter Snake",
+                    "scientific_name": "Thamnophis sirtalis",
+                    "status": "stable",
+                    "description": "Most common snake in NJ, harmless and beneficial pest controller.",
+                    "fun_fact": "They give live birth rather than laying eggs!",
+                    "habitat": [
+                        "gardens",
+                        "parks",
+                        "near_water"
+                    ],
+                    "diet": [
+                        "slugs",
+                        "worms",
+                        "frogs",
+                        "insects"
+                    ],
+                    "activity": "diurnal",
+                    "image": "https://images.pexels.com/photos/34426/snake-rainbow-boa-reptile-scale.jpg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-031",
+                    "common_name": "Northern Black Racer",
+                    "scientific_name": "Coluber constrictor",
+                    "status": "stable",
+                    "description": "Fast-moving, non-venomous snake. Despite the name, does not constrict prey.",
+                    "fun_fact": "Can move at speeds up to 4 mph, making it one of the fastest snakes in North America.",
+                    "habitat": [
+                        "fields",
+                        "woodland_edges",
+                        "rocky_areas"
+                    ],
+                    "diet": [
+                        "rodents",
+                        "birds",
+                        "insects",
+                        "frogs"
+                    ],
+                    "activity": "diurnal",
+                    "image": "https://images.pexels.com/photos/567540/pexels-photo-567540.jpeg?auto=compress&cs=tinysrgb&w=800"
+                }
+            ]
+        },
+        {
+            "id": "CAT-INVASIVE",
+            "name": "Invasive Species",
+            "description": "Non-native species that threaten local ecosystems",
+            "icon": "alert-triangle",
+            "color": "#DC143C",
+            "image": "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "species": [
+                {
+                    "id": "SP-040",
+                    "common_name": "Spotted Lanternfly",
+                    "scientific_name": "Lycorma delicatula",
+                    "status": "invasive",
+                    "description": "Destructive agricultural pest from Asia. Major threat to grapes, hops, and hardwood trees.",
+                    "fun_fact": "They must be killed on sight! Scrape egg masses into alcohol or hand sanitizer.",
+                    "habitat": [
+                        "tree_of_heaven",
+                        "grape_vines",
+                        "hardwoods"
+                    ],
+                    "diet": [
+                        "plant_sap"
+                    ],
+                    "activity": "diurnal",
+                    "image": "https://images.pexels.com/photos/4534200/pexels-photo-4534200.jpeg?auto=compress&cs=tinysrgb&w=800",
+                    "action_required": true
+                },
+                {
+                    "id": "SP-041",
+                    "common_name": "Brown Rat",
+                    "scientific_name": "Rattus norvegicus",
+                    "status": "invasive",
+                    "description": "Introduced from Asia, now ubiquitous in urban areas. Disease vector.",
+                    "fun_fact": "Despite their name 'Norway Rat', they actually originated in northern China.",
+                    "habitat": [
+                        "sewers",
+                        "buildings",
+                        "subways"
+                    ],
+                    "diet": [
+                        "omnivore",
+                        "garbage"
+                    ],
+                    "activity": "nocturnal",
+                    "image": "https://images.pexels.com/photos/51340/rat-pet-eat-51340.jpeg?auto=compress&cs=tinysrgb&w=800"
+                }
+            ]
+        },
+        {
+            "id": "CAT-DOMESTIC",
+            "name": "Domesticated Animals",
+            "description": "Pets and managed animal populations",
+            "icon": "heart",
+            "color": "#FF69B4",
+            "image": "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=800",
+            "species": [
+                {
+                    "id": "SP-050",
+                    "common_name": "Domestic Dog",
+                    "scientific_name": "Canis familiaris",
+                    "status": "domestic",
+                    "description": "Man's best friend! License required in Jersey City.",
+                    "fun_fact": "Jersey City has several great dog parks including Pershing Field and Van Vorst Park.",
+                    "habitat": [
+                        "homes",
+                        "parks"
+                    ],
+                    "diet": [
+                        "dog_food"
+                    ],
+                    "activity": "varies",
+                    "image": "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-051",
+                    "common_name": "Domestic Cat",
+                    "scientific_name": "Felis catus",
+                    "status": "domestic",
+                    "description": "Popular pet. Outdoor cats significantly impact bird populations.",
+                    "fun_fact": "Consider keeping cats indoors to protect local wildlife - a single cat can kill dozens of birds per year.",
+                    "habitat": [
+                        "homes",
+                        "outdoors"
+                    ],
+                    "diet": [
+                        "cat_food",
+                        "prey"
+                    ],
+                    "activity": "crepuscular",
+                    "image": "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=800"
+                },
+                {
+                    "id": "SP-052",
+                    "common_name": "Community Cat",
+                    "scientific_name": "Felis catus",
+                    "status": "managed",
+                    "description": "Managed colonies of feral cats. Ear-tipped cats have been sterilized through TNR programs.",
+                    "fun_fact": "Look for the ear tip! Cats with clipped ears have been neutered and vaccinated.",
+                    "habitat": [
+                        "colonies",
+                        "streets"
+                    ],
+                    "diet": [
+                        "prey",
+                        "provided_food"
+                    ],
+                    "activity": "crepuscular",
+                    "image": "https://images.pexels.com/photos/669015/pexels-photo-669015.jpeg?auto=compress&cs=tinysrgb&w=800"
+                }
+            ]
+        }
+    ]
+}

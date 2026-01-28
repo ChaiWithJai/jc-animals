@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "question": "You find a baby bird on the ground. What should you do?",
+        "options": [
+            {
+                "text": "Take it home and care for it",
+                "correct": false,
+                "feedback": "It's illegal to keep wild birds, and parent birds often care for grounded fledglings."
+            },
+            {
+                "text": "Check if it's a nestling or fledgling, and leave fledglings alone",
+                "correct": true,
+                "feedback": "Correct! Fledglings with feathers are learning to fly. Parents are nearby."
+            },
+            {
+                "text": "Call 911",
+                "correct": false,
+                "feedback": "This isn't an emergency. Wildlife rehabilitators handle non-urgent cases."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "question": "A raccoon is in your trash at 10pm. What should you do?",
+        "options": [
+            {
+                "text": "Chase it away aggressively",
+                "correct": false,
+                "feedback": "Never corner wildlife - they may bite if threatened."
+            },
+            {
+                "text": "Make noise from a safe distance and secure trash better",
+                "correct": true,
+                "feedback": "Correct! Noise will encourage them to leave, and securing trash prevents return visits."
+            },
+            {
+                "text": "Leave food out so it doesn't make a mess",
+                "correct": false,
+                "feedback": "Feeding wildlife creates dependency and attracts more animals."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "question": "You see a spotted lanternfly on a tree. What should you do?",
+        "options": [
+            {
+                "text": "Take a photo and leave it alone",
+                "correct": false,
+                "feedback": "Spotted lanternflies are invasive and should be killed on sight."
+            },
+            {
+                "text": "Kill it and check for more",
+                "correct": true,
+                "feedback": "Correct! SLF are invasive pests. Kill all life stages and report large infestations."
+            },
+            {
+                "text": "Relocate it to a park",
+                "correct": false,
+                "feedback": "This would spread the infestation. They must be killed, not relocated."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "question": "You spot an opossum in your backyard at night. What should you know?",
+        "options": [
+            {
+                "text": "Call animal control immediately - they're dangerous",
+                "correct": false,
+                "feedback": "Opossums are actually docile and beneficial! They eat thousands of ticks."
+            },
+            {
+                "text": "They're beneficial and rarely carry rabies - leave them alone",
+                "correct": true,
+                "feedback": "Correct! Their low body temperature makes them nearly immune to rabies, and they eat 5,000+ ticks per season."
+            },
+            {
+                "text": "Try to catch it and keep it as a pet",
+                "correct": false,
+                "feedback": "It's illegal to keep wildlife as pets in NJ, and they don't make good pets anyway."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "question": "A bat is flying inside your house. What's the priority?",
+        "options": [
+            {
+                "text": "Try to catch it with your bare hands",
+                "correct": false,
+                "feedback": "Never handle bats with bare hands - rabies risk requires professional handling."
+            },
+            {
+                "text": "Open windows, close doors to other rooms, and call Animal Control",
+                "correct": true,
+                "feedback": "Correct! Bats can carry rabies. Contain the bat to one room and call professionals."
+            },
+            {
+                "text": "Ignore it - it will find its way out",
+                "correct": false,
+                "feedback": "A bat inside requires action due to rabies risk. Call Animal Control."
+            }
+        ]
+    }
+]

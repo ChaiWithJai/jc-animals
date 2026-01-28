@@ -1,0 +1,65 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate JSON data files
+        run: |
+          for f in data/*.json; do
+            echo "Validating $f..."
+            python3 -m json.tool "$f" > /dev/null || exit 1
+          done
+
+
+      - name: Check for broken internal links
+        run: |
+          # Check that referenced images in JSON exist or are valid URLs
+          echo "Checking image URLs in species.json..."
+          grep -oP 'https://[^"]+' data/species.json | head -5 | while read url; do
+            curl -sf --head "$url" > /dev/null || echo "Warning: $url may be broken"
+          done
+
+  lighthouse:
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Start server
+        run: |
+          npx serve . -p 3000 &
+          sleep 3
+
+      - name: Run Lighthouse CI
+        run: |
+          npx @lhci/cli@0.13.x autorun --collect.url=http://localhost:3000 || true
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [validate, lighthouse]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3.0
+        with:
+          publish-dir: '.'
+          production-deploy: true
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
