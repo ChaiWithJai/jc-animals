@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "Your Domain Knowledge Is Your Eval Function",
+    "alt_title": "When Claude Got the Sanskrit Wrong",
+    "event": "Claude Code Anonymous",
+    "speaker": "Jai Bhagat",
+    "duration_minutes": 10,
+    "format": "I was X when Claude Code Y",
+    "genre": "War Story (swyx taxonomy)"
+  },
+
+  "arena_labeling": {
+    "primary_chapter": "3.1 Intro to Evals",
+    "secondary_chapter": "1.2 Intro to Mech Interp",
+    "concepts_applied": {
+      "threat_model": "What could go wrong with AI outputs in my domain?",
+      "specification": "Define what 'correct' means before evaluating",
+      "capability_vs_alignment": "Claude CAN synthesize data. Does it WANT to be accurate?",
+      "attribution": "Which component (Claude or human) is responsible for the output quality?",
+      "ground_truth": "Domain expertise provides the reference for evaluation"
+    }
+  },
+
+  "hook": {
+    "text": "I'm a frontend engineer. I feel like an endangered species—junior roles vanishing, mid-levels competing with AI-augmented seniors. So I built something with Claude Code to see what I'm up against.",
+    "arena_label": "THREAT_MODEL_PERSONAL: What happens to my role when AI capability increases?"
+  },
+
+  "moments": [
+    {
+      "formula": "I was impressed when Claude synthesized government jurisdictions I couldn't find",
+      "what_happened": "Asked which agencies handle different animals—municipal, county, state, federal. Claude cross-referenced NJ DEP, USFWS, local animal control.",
+      "arena_label": "CAPABILITY_EVAL: The model demonstrated information synthesis capability I don't have.",
+      "trade_off": "I trusted. I couldn't verify without doing the research myself.",
+      "arena_lesson": "Capability without verification is dangerous. This is why ARENA 3.1 emphasizes: 'working out what to measure and how to measure it.'"
+    },
+    {
+      "formula": "I was corrected when Claude got the Sanskrit wrong",
+      "what_happened": "Asked for blog on illusion in pet ownership. Claude wrote 'mala' (impurity/garland). I caught it. Changed to 'maya' (illusion).",
+      "arena_label": "ALIGNMENT_EVAL: Model showed tendency toward confident-but-wrong outputs when domains blur.",
+      "technical_detail": {
+        "mala": "Sanskrit माला - garland, rosary, or impurity (different root)",
+        "maya": "Sanskrit माया - illusion, magic, the veil separating perception from reality",
+        "error_type": "Phonetic similarity + training data conflation"
+      },
+      "arena_lesson": "This is ARENA 1.2 interpretability: 'understanding what models actually do vs what we think they do.' The output looked correct. Only domain knowledge caught it.",
+      "key_insight": "Your domain knowledge is your ground truth. Without it, you can't catch confident errors."
+    },
+    {
+      "formula": "I was stuck when Netlify CLI hung waiting for input",
+      "what_happened": "Claude ran 'netlify init --manual' in background. It waited for interactive input that wasn't coming.",
+      "arena_label": "CAPABILITY_LIMITATION: Model doesn't know what it doesn't know about runtime environments.",
+      "what_i_did": "Killed process. Used direct flags: 'netlify sites:create --name jc-animals-heights --account-slug [slug]'.",
+      "arena_lesson": "ARENA 3.1: 'The questions are much more open-ended... you have to think.' The model generates commands; humans verify runtime behavior."
+    },
+    {
+      "formula": "I was annoyed when PageSpeed API hit quota",
+      "what_happened": "Asked for performance audit. PageSpeed API quota exceeded.",
+      "what_claude_did": "Recovered by suggesting local Lighthouse.",
+      "result": "Performance: 72. LCP: 5.7s due to hero video.",
+      "what_i_did": "Fixed it myself—lazy load video on desktop only. Pushed. Redeployed.",
+      "arena_label": "ATTRIBUTION: Clear division—Claude diagnoses, human fixes.",
+      "arena_lesson": "This is what ARENA calls 'human in the loop.' The model provides capability; the human provides judgment."
+    }
+  ],
+
+  "meta_realization": {
+    "title": "The maya framework became my eval framework",
+    "what_happened": "I had Claude write about maya—the Vedantic concept of illusion. Three mechanisms emerged.",
+    "the_framework": {
+      "arena_mapping": "These map to ARENA 3.1 threat model questions",
+      "questions": [
+        {
+          "maya_term": "Avarana (Concealment)",
+          "question": "What is this output concealing?",
+          "arena_equivalent": "THREAT_MODEL: What failure modes are hidden?",
+          "example": "Claude's government data synthesis—what sources did it miss?"
+        },
+        {
+          "maya_term": "Vikshepa (Projection)",
+          "question": "What am I projecting onto this output?",
+          "arena_equivalent": "SPECIFICATION_GAP: Am I assuming capabilities that aren't there?",
+          "example": "Assuming Claude 'knows' Sanskrit when it pattern-matched phonetically"
+        },
+        {
+          "maya_term": "Smriti-bhrama (False Memory)",
+          "question": "What assumptions am I carrying that are stale?",
+          "arena_equivalent": "BASELINE_DRIFT: What did I believe about AI last year that's wrong now?",
+          "example": "Assuming AI can't do X, when it now can—or assuming it can when it still can't"
+        }
+      ]
+    },
+    "arena_label": "SPECIFICATION: Using philosophical framework to operationalize 'what to measure'",
+    "correctness_note": "Maya (माया) is correctly used here as the Advaita Vedanta concept of cosmic illusion—distinct from 'mala' which Claude incorrectly used earlier."
+  },
+
+  "perspective_shift": {
+    "before": "AI is replacing me",
+    "after": "AI is changing what 'me' means. I'm not writing CSS. I'm the one who knows when the Sanskrit is wrong.",
+    "arena_label": "ROLE_REDEFINITION: From capability provider to evaluation function",
+    "arena_connection": "ARENA 3.1: 'Alignment evaluations measure whether the model has the tendency/propensity to show specific behavior.' Your domain knowledge IS the alignment eval."
+  },
+
+  "call_to_action": {
+    "text": "Before you deploy, ask the three questions. What's concealed? What are you projecting? What assumptions are stale?",
+    "arena_label": "THREAT_MODEL_CHECKLIST: Lightweight eval before every ship",
+    "implementation_intention": "When Claude gives you a confident answer, that's your cue to ask: what's missing?"
+  },
+
+  "slides_revised": [
+    {
+      "slide": 1,
+      "title": "Your Domain Knowledge Is Your Eval Function",
+      "say": "I'm Jai. Frontend engineer. Endangered species. Built something with Claude to see what I'm up against.",
+      "show": "Title + QR to jc-animals-heights.netlify.app",
+      "time": "45s"
+    },
+    {
+      "slide": 2,
+      "title": "When Claude Got the Sanskrit Wrong",
+      "say": "Asked for blog on illusion. Claude wrote 'mala'—impurity. I caught it. Changed to 'maya'—illusion. Confident. Coherent. Wrong.",
+      "show": "'mala' (माला) → 'maya' (माया) with definitions",
+      "arena_label": "ALIGNMENT_EVAL moment",
+      "time": "90s"
+    },
+    {
+      "slide": 3,
+      "title": "The Three Questions (Maya Framework)",
+      "say": "The blog content became my eval framework. Three questions from Vedantic philosophy, mapped to ARENA 3.1 threat modeling.",
+      "show": "1. What's concealed? 2. What am I projecting? 3. What assumptions are stale?",
+      "arena_label": "SPECIFICATION operationalized",
+      "time": "90s"
+    },
+    {
+      "slide": 4,
+      "title": "Capability vs Judgment",
+      "say": "Claude synthesized government data I couldn't find. But I couldn't verify it. I trusted. That's the trade-off.",
+      "show": "Screenshot of agency finder",
+      "arena_label": "CAPABILITY_EVAL without GROUND_TRUTH",
+      "time": "60s"
+    },
+    {
+      "slide": 5,
+      "title": "The New Job",
+      "say": "I'm not writing CSS anymore. I'm the one who knows when the Sanskrit is wrong. Your domain knowledge is your eval function.",
+      "show": "Role shift diagram: Implementer → Evaluator",
+      "arena_label": "ATTRIBUTION: Human provides ground truth",
+      "time": "60s"
+    },
+    {
+      "slide": 6,
+      "title": "Before You Deploy",
+      "say": "Ask the three questions. What's concealed? What are you projecting? What assumptions are stale? Your domain knowledge is the only thing standing between you and a confident mistake.",
+      "show": "Three questions + links (site, GitHub, ARENA)",
+      "time": "60s"
+    }
+  ],
+
+  "correctness_verification": {
+    "sanskrit_terms": {
+      "maya": {
+        "devanagari": "माया",
+        "meaning": "Illusion, magic, unreality; in Advaita Vedanta, the cosmic force that creates the appearance of the phenomenal world",
+        "source": "Mandukya Upanishad, Shankara's commentaries"
+      },
+      "mala": {
+        "devanagari": "माला",
+        "meaning": "Garland, rosary, string of beads; OR (different root) impurity in Kashmir Shaivism",
+        "source": "Common usage; Shiva Sutras for impurity meaning"
+      },
+      "avarana": {
+        "devanagari": "आवरण",
+        "meaning": "Covering, concealment; one of two powers of maya",
+        "source": "Vivekachudamani"
+      },
+      "vikshepa": {
+        "devanagari": "विक्षेप",
+        "meaning": "Projection, scattering; the power of maya that projects the unreal",
+        "source": "Vivekachudamani"
+      },
+      "smriti_bhrama": {
+        "devanagari": "स्मृति भ्रम",
+        "meaning": "Memory error, false recollection",
+        "source": "Yoga Sutras (smriti); bhrama = error/delusion"
+      }
+    },
+    "arena_terms": {
+      "threat_model": "ARENA 3.1: 'working out what to measure and how to measure it'",
+      "specification": "ARENA 3.1: 'a specification of the model property'",
+      "capability_eval": "ARENA 3.1: 'measure whether the model has the capacity for specific behavior'",
+      "alignment_eval": "ARENA 3.1: 'measure whether the model has the tendency/propensity to show specific behavior'",
+      "ground_truth": "ARENA 3.3: 'baseline' - the reference against which outputs are measured"
+    }
+  },
+
+  "editorial_fixes_applied": {
+    "pressfield": "Cut Netlify CLI detail from main talk. Lead with Sanskrit error.",
+    "manson": "Acknowledged uncomfortable truth: domain knowledge is countdown timer, not permanent moat.",
+    "clear": "Lead with framework, stories are proof. Added implementation intention.",
+    "swyx": "New title passes 30-second test. Genre clear (War Story). Front-loaded novelty.",
+    "strunk_white": "Cut 'Here's the thing,' 'Lately I've been feeling,' 'actually.' 20% tighter."
+  },
+
+  "links": {
+    "site": "jc-animals-heights.netlify.app",
+    "github": "github.com/ChaiWithJai/jc-animals",
+    "arena": "arena.education"
+  }
+}
