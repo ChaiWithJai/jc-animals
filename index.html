@@ -16,6 +16,9 @@
   <meta property="og:image" content="https://images.unsplash.com/photo-1474511320723-9a56873571b7?w=1200">
   <meta property="og:type" content="website">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,14 +81,14 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-bg">
-      <!-- Video loop background - falconer with majestic bird in forest (NatGeo style) -->
-      <video class="hero-bg-video" autoplay muted loop playsinline
+      <!-- Video loop background - only loads on desktop for performance -->
+      <video class="hero-bg-video" autoplay muted loop playsinline preload="metadata"
         poster="https://images.pexels.com/photos/2387418/pexels-photo-2387418.jpeg?auto=compress&cs=tinysrgb&w=1920">
-        <source src="https://videos.pexels.com/video-files/31960626/31960626-hd_1920_1080_25fps.mp4" type="video/mp4">
+        <!-- Video source only loaded via JS on desktop -->
       </video>
-      <!-- Fallback image for reduced motion preference -->
-      <img src="https://images.pexels.com/photos/2387418/pexels-photo-2387418.jpeg?auto=compress&cs=tinysrgb&w=1920"
-        alt="River valley and cliffs" class="hero-bg-img hero-bg-fallback" loading="eager">
+      <!-- Static image for mobile (faster LCP) and reduced motion preference -->
+      <img src="https://images.pexels.com/photos/2387418/pexels-photo-2387418.jpeg?auto=compress&cs=tinysrgb&w=1200"
+        alt="River valley and cliffs" class="hero-bg-img" loading="eager">
       <div class="hero-overlay"></div>
     </div>
 

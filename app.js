@@ -188,6 +188,7 @@ let selectedCategory = null;
 // DOM Ready
 document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
+  initHeroVideo();
   initScrollAnimations();
   initCounters();
   renderCategories();
@@ -196,6 +197,34 @@ document.addEventListener('DOMContentLoaded', () => {
   initAgencyFinder();
   renderAgencyCards();
 });
+
+// Hero Video - Only load on desktop for performance
+function initHeroVideo() {
+  const video = document.querySelector('.hero-bg-video');
+  if (!video) return;
+
+  // Only load video on desktop (768px+) and if user doesn't prefer reduced motion
+  const isDesktop = window.matchMedia('(min-width: 768px)').matches;
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (isDesktop && !prefersReducedMotion) {
+    const source = document.createElement('source');
+    source.src = 'https://videos.pexels.com/video-files/31960626/31960626-hd_1920_1080_25fps.mp4';
+    source.type = 'video/mp4';
+    video.appendChild(source);
+    video.load();
+    video.style.display = 'block';
+
+    // Hide fallback image when video is ready
+    video.addEventListener('loadeddata', () => {
+      const fallbackImg = document.querySelector('.hero-bg-img');
+      if (fallbackImg) fallbackImg.style.display = 'none';
+    });
+  } else {
+    // Hide video element on mobile
+    video.style.display = 'none';
+  }
+}
 
 // Navigation
 function initNavigation() {

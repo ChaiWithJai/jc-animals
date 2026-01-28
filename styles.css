@@ -345,6 +345,13 @@ button {
 .hero-bg-video {
   position: absolute;
   inset: 0;
+  display: none;
+  /* Hidden by default, shown via JS on desktop */
+}
+
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
 }
 
 .hero-bg-fallback {
@@ -353,7 +360,7 @@ button {
 
 @media (prefers-reduced-motion: reduce) {
   .hero-bg-video {
-    display: none;
+    display: none !important;
   }
 
   .hero-bg-fallback {

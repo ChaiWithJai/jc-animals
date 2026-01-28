@@ -29,3 +29,6 @@ lighthouse-*.json
 # Logs
 *.log
 npm-debug.log*
+
+# Local Netlify folder
+.netlify
